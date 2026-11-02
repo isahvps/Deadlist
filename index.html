@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11100f"><title>THE FILM ARCHIVE — Cinemateca Pessoal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<aside class="sidebar">
+  <div class="brand"><span class="brand-mark">▰</span><div>THE FILM<br><b>ARCHIVE</b><small>CINEMATECA PESSOAL</small></div></div>
+  <div class="profile"><img src="assets/profile.jpg" alt="Foto de perfil"><div><strong>Isabela Vitória</strong><small>ARQUIVO PESSOAL</small></div><button id="editProfile" title="Editar perfil">✎</button></div>
+  <nav id="nav">
+    <button class="active" data-view="inicio">◈　Visão geral</button>
+    <button data-view="diretores">▤　Diretores</button>
+    <button data-view="terror">☾　Terror</button>
+    <button data-view="suspense">⌁　Suspense & Mistério</button>
+    <button data-view="roleta">◎　Roleta de filmes</button>
+    <button data-view="cult">✳　Cinema de autor</button>
+    <button data-view="watchlist">＋　Quero assistir</button>
+    <button data-view="diario">▧　Diário de filmes</button>
+  </nav>
+  <div class="sidebar-bottom"><span>EST. 2026</span><span>VOL. 01 — NOIR</span></div>
+</aside>
+<main>
+<header class="topbar"><div class="crumb">ARQUIVO / <span id="crumb">VISÃO GERAL</span></div><div class="top-actions"><span class="status-dot"></span> ACERVO LOCAL <button id="themeToggle" title="Alternar contraste">◐</button></div></header>
+<section class="hero" id="hero"><div class="hero-copy"><div class="eyebrow">✦　SEU UNIVERSO CINEMATOGRÁFICO</div><h1>Filmes que<br><em>permanecem.</em></h1><p>Um arquivo pessoal para descobrir, catalogar e revisitar histórias que deixam marcas.</p><button class="primary" data-go="roleta">SORTEAR UM FILME <span>↗</span></button></div><div class="hero-art"><div class="hero-stamp">THE<br>FILM<br>ARCHIVE</div><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Pôster de Oppenheimer"><div class="hero-caption">FRAME Nº 001 / CINEMA IS A MEMORY</div></div></section>
+<section class="stats"><div><small>FILMES NO ARQUIVO</small><strong id="statTotal">24</strong></div><div><small>NA LISTA</small><strong id="statWatch">0</strong></div><div><small>JÁ ASSISTIDOS</small><strong id="statSeen">0</strong></div><div><small>NOTAS REGISTRADAS</small><strong id="statNotes">0</strong></div></section>
+<section class="content" id="content"></section>
+<footer>THE FILM ARCHIVE <span>UM ARQUIVO EM CONSTANTE REVISÃO</span> <span>© 2026</span></footer>
+</main>
+<div class="modal hidden" id="modal"><div class="modal-box"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<script src="script.js"></script>
+</body></html>
